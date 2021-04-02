@@ -1,0 +1,56 @@
+site_name: FastAPI Users
+site_description: Ready-to-use and customizable users management for FastAPI
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'red'
+    accent: 'red'
+  icon:
+    logo: material/account-supervisor
+  favicon: 'favicon.png'
+
+repo_name: frankie567/fastapi-users
+repo_url: https://github.com/frankie567/fastapi-users
+edit_uri: ""
+
+markdown_extensions:
+  - markdown_include.include:
+      base_path: docs
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tabbed
+
+nav:
+  - About: index.md
+  - installation.md
+  - Configuration:
+    - configuration/model.md
+    - Databases:
+      - configuration/databases/sqlalchemy.md
+      - configuration/databases/mongodb.md
+      - configuration/databases/tortoise.md
+    - Authentication:
+      - Introduction: configuration/authentication/index.md
+      - configuration/authentication/jwt.md
+      - configuration/authentication/cookie.md
+    - Routers:
+      - Introduction: configuration/routers/index.md
+      - configuration/routers/auth.md
+      - configuration/routers/register.md
+      - configuration/routers/reset.md
+      - configuration/routers/users.md
+    - configuration/full_example.md
+    - configuration/oauth.md
+  - Usage:
+    - usage/flow.md
+    - usage/routes.md
+    - usage/dependency-callables.md
+  - Migration:
+    - migration/08_to_1x.md
+    - migration/1x_to_2x.md
+    - migration/2x_to_3x.md

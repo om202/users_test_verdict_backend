@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+markdown_include/__init__.py
+markdown_include/include.py
+markdown_include.egg-info/PKG-INFO
+markdown_include.egg-info/SOURCES.txt
+markdown_include.egg-info/dependency_links.txt
+markdown_include.egg-info/requires.txt
+markdown_include.egg-info/top_level.txt
